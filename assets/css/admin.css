@@ -1,0 +1,348 @@
+/**
+ * WPCalibrate Vehicle Fitment & Parts Finder - Admin Styles
+ */
+
+.wpcalibrate-vf-admin-wrap .wpcalibrate-vf-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 0 20px;
+	border-bottom: 1px solid #ccd0d4;
+	margin-bottom: 20px;
+}
+
+.wpcalibrate-vf-version-badge {
+	background: #2271b1;
+	color: #fff;
+	font-weight: 600;
+	font-size: 0.85rem;
+	padding: 4px 10px;
+	border-radius: 12px;
+}
+
+.wpcalibrate-vf-nav-tabs .nav-tab {
+	font-size: 0.95rem;
+	padding: 8px 16px;
+}
+
+/* Sidebar Menu Icon Constraints */
+#adminmenu .toplevel_page_wpcalibrate div.wp-menu-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#adminmenu .toplevel_page_wpcalibrate div.wp-menu-image img {
+	width: 20px !important;
+	height: 20px !important;
+	max-width: 20px !important;
+	max-height: 20px !important;
+	padding: 0 !important;
+	opacity: 0.72;
+	filter: none;
+	transition: opacity 0.15s ease-in-out;
+}
+#adminmenu .toplevel_page_wpcalibrate:hover div.wp-menu-image img,
+#adminmenu .toplevel_page_wpcalibrate.wp-has-current-submenu div.wp-menu-image img,
+#adminmenu .toplevel_page_wpcalibrate.current div.wp-menu-image img {
+	opacity: 1;
+	filter: none;
+}
+
+/* Product Metabox Fitment Panel */
+#wpcalibrate_vf_fitment_panel .card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	padding: 18px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.wpcalibrate-vf-assignments-container {
+	margin-top: 20px;
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+/* Autocomplete Dropdown */
+#wpcalibrate-vf-meta-search-results div:hover,
+#wpcalibrate-vf-bulk-vehicle-dropdown div:hover {
+	background-color: #f0f6fc;
+}
+
+/* Overview Tab Styling */
+.wpcalibrate-vf-overview-wrap {
+	max-width: 1240px;
+	margin-top: 10px;
+}
+
+.wpcalibrate-vf-overview-hero {
+	background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+	border-radius: 10px;
+	padding: 28px 32px;
+	color: #fff !important;
+	box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+	margin-bottom: 20px;
+}
+
+.wpcalibrate-vf-hero-pill {
+	display: inline-block;
+	background: rgba(56, 189, 248, 0.15);
+	color: #38bdf8 !important;
+	border: 1px solid rgba(56, 189, 248, 0.35);
+	font-size: 0.72rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	padding: 4px 10px;
+	border-radius: 16px;
+}
+
+.wpcalibrate-vf-hero-content h2 {
+	color: #fff !important;
+	font-size: 1.65rem;
+	font-weight: 700;
+	margin: 12px 0 8px;
+	line-height: 1.25;
+}
+
+.wpcalibrate-vf-hero-desc {
+	color: #cbd5e1 !important;
+	font-size: 0.95rem;
+	line-height: 1.6;
+	margin: 0;
+	max-width: 800px;
+}
+
+.wpcalibrate-vf-hero-stats {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 16px;
+	margin-top: 24px;
+	padding-top: 20px;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wpcalibrate-vf-stat-box {
+	background: rgba(255, 255, 255, 0.06);
+	backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 8px;
+	padding: 14px 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wpcalibrate-vf-stat-num {
+	font-size: 1.55rem;
+	font-weight: 700;
+	color: #38bdf8 !important;
+	line-height: 1.2;
+}
+
+.wpcalibrate-vf-stat-lbl {
+	font-size: 0.76rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #94a3b8 !important;
+	margin-top: 4px;
+}
+
+.wpcalibrate-vf-quick-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 20px 0;
+	align-items: center;
+}
+
+.wpcalibrate-vf-quick-actions .button {
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 6px !important;
+	padding: 4px 14px !important;
+	height: 36px !important;
+	line-height: 26px !important;
+	font-weight: 500 !important;
+}
+
+.wpcalibrate-vf-quick-actions .button .dashicons {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	margin: 0;
+}
+
+.wpcalibrate-vf-overview-grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 22px;
+}
+
+.wpcalibrate-vf-section-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+	overflow: hidden;
+}
+
+.wpcalibrate-vf-card-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 14px 20px;
+	background: #f8fafc;
+	border-bottom: 1px solid #e2e8f0;
+}
+
+.wpcalibrate-vf-card-header h3 {
+	margin: 0;
+	font-size: 1.05rem;
+	font-weight: 600;
+	color: #1e293b;
+}
+
+.wpcalibrate-vf-card-header .dashicons {
+	color: #2271b1;
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+}
+
+.wpcalibrate-vf-guide-steps {
+	padding: 22px;
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+
+.wpcalibrate-vf-step {
+	display: flex;
+	gap: 16px;
+	align-items: flex-start;
+}
+
+.wpcalibrate-vf-step-badge {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: #2271b1;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 0.95rem;
+	flex-shrink: 0;
+}
+
+.wpcalibrate-vf-step-body h4 {
+	margin: 0 0 6px;
+	font-size: 1rem;
+	color: #0f172a;
+	font-weight: 600;
+}
+
+.wpcalibrate-vf-step-body p {
+	margin: 0;
+	color: #475569;
+	font-size: 0.9rem;
+	line-height: 1.55;
+}
+
+.wpcalibrate-vf-code-preview {
+	margin-top: 10px;
+	background: #f1f5f9;
+	border: 1px solid #e2e8f0;
+	border-radius: 6px;
+	padding: 10px 14px;
+}
+
+.wpcalibrate-vf-code-preview code {
+	background: transparent;
+	padding: 0;
+	color: #0f172a;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.wpcalibrate-vf-code-sub {
+	display: block;
+	font-size: 0.8rem;
+	color: #64748b;
+	margin-top: 4px;
+}
+
+.wpcalibrate-vf-methods-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px;
+	padding: 20px;
+}
+
+.wpcalibrate-vf-method-item {
+	background: #f8fafc;
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.wpcalibrate-vf-method-icon {
+	width: 36px;
+	height: 36px;
+	border-radius: 6px;
+	background: #e0f2fe;
+	color: #0284c7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.wpcalibrate-vf-method-icon .dashicons {
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+}
+
+.wpcalibrate-vf-method-item h4 {
+	margin: 0 0 6px;
+	font-size: 0.95rem;
+	color: #0f172a;
+}
+
+.wpcalibrate-vf-method-item p {
+	margin: 0;
+	font-size: 0.85rem;
+	color: #475569;
+	line-height: 1.5;
+}
+
+.wpcalibrate-vf-card-body {
+	padding: 18px 20px;
+}
+
+.wpcalibrate-vf-attr-list {
+	margin: 6px 0 0 0;
+	padding-left: 18px;
+	font-size: 0.82rem;
+	color: #64748b;
+}
+
+.wpcalibrate-vf-attr-list li {
+	margin-bottom: 4px;
+}
+
+@media (max-width: 960px) {
+	.wpcalibrate-vf-overview-grid {
+		grid-template-columns: 1fr;
+	}
+	.wpcalibrate-vf-hero-stats {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.wpcalibrate-vf-methods-grid {
+		grid-template-columns: 1fr;
+	}
+}
+

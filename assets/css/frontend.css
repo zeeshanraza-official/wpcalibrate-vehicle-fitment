@@ -1,0 +1,370 @@
+/**
+ * WPCalibrate Vehicle Fitment & Parts Finder - Frontend Styles
+ * Theme-neutral, accessible, responsive, RTL compatible.
+ */
+
+:root {
+	--wpcalibrate-vf-primary: #0073aa;
+	--wpcalibrate-vf-primary-hover: #005177;
+	--wpcalibrate-vf-success-bg: #e7f7ed;
+	--wpcalibrate-vf-success-border: #46b450;
+	--wpcalibrate-vf-success-text: #1d6e27;
+	--wpcalibrate-vf-error-bg: #fde8e8;
+	--wpcalibrate-vf-error-border: #dc3232;
+	--wpcalibrate-vf-error-text: #8e1515;
+	--wpcalibrate-vf-info-bg: #f0f6fc;
+	--wpcalibrate-vf-info-border: #72aee6;
+	--wpcalibrate-vf-info-text: #0b3d68;
+	--wpcalibrate-vf-border-radius: 6px;
+	--wpcalibrate-vf-transition: all 0.2s ease-in-out;
+}
+
+/* Finder Wrapper */
+.wpcalibrate-vf-finder-wrap {
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-radius: var(--wpcalibrate-vf-border-radius);
+	padding: 20px;
+	margin: 20px 0;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+	box-sizing: border-box;
+}
+
+.wpcalibrate-vf-finder-title {
+	margin: 0 0 15px 0;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #1a202c;
+}
+
+/* Active Vehicle Banner */
+.wpcalibrate-vf-active-vehicle-banner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: var(--wpcalibrate-vf-info-bg);
+	border: 1px solid var(--wpcalibrate-vf-info-border);
+	color: var(--wpcalibrate-vf-info-text);
+	padding: 10px 14px;
+	border-radius: var(--wpcalibrate-vf-border-radius);
+	margin-bottom: 15px;
+	font-size: 0.95rem;
+}
+
+.wpcalibrate-vf-banner-icon {
+	margin-inline-end: 8px;
+}
+
+.wpcalibrate-vf-change-vehicle-btn {
+	background: transparent;
+	border: 1px solid currentColor;
+	color: inherit;
+	border-radius: 4px;
+	padding: 3px 10px;
+	font-size: 0.85rem;
+	cursor: pointer;
+	transition: var(--wpcalibrate-vf-transition);
+}
+
+.wpcalibrate-vf-change-vehicle-btn:hover,
+.wpcalibrate-vf-change-vehicle-btn:focus-visible {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+/* Form Grid */
+.wpcalibrate-vf-horizontal .wpcalibrate-vf-fields-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	align-items: flex-end;
+}
+
+.wpcalibrate-vf-horizontal .wpcalibrate-vf-field-group {
+	flex: 1 1 160px;
+}
+
+.wpcalibrate-vf-vertical .wpcalibrate-vf-fields-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.wpcalibrate-vf-vertical .wpcalibrate-vf-field-group {
+	width: 100%;
+}
+
+.wpcalibrate-vf-select {
+	width: 100%;
+	padding: 9px 12px;
+	border: 1px solid #cbd5e1;
+	border-radius: var(--wpcalibrate-vf-border-radius);
+	background-color: #ffffff;
+	font-size: 0.95rem;
+	color: #334155;
+	transition: var(--wpcalibrate-vf-transition);
+	box-sizing: border-box;
+}
+
+.wpcalibrate-vf-select:focus-visible {
+	border-color: var(--wpcalibrate-vf-primary);
+	outline: 2px solid var(--wpcalibrate-vf-primary);
+	outline-offset: 1px;
+}
+
+.wpcalibrate-vf-select:disabled {
+	background-color: #f8fafc;
+	color: #94a3b8;
+	cursor: not-allowed;
+	border-color: #e2e8f0;
+}
+
+/* Buttons */
+.wpcalibrate-vf-btn-group {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.wpcalibrate-vf-submit-btn {
+	background-color: var(--wpcalibrate-vf-primary);
+	color: #ffffff;
+	border: none;
+	border-radius: var(--wpcalibrate-vf-border-radius);
+	padding: 10px 20px;
+	font-size: 0.95rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: var(--wpcalibrate-vf-transition);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+}
+
+.wpcalibrate-vf-submit-btn:hover:not(:disabled) {
+	background-color: var(--wpcalibrate-vf-primary-hover);
+}
+
+.wpcalibrate-vf-submit-btn:disabled {
+	opacity: 0.55;
+	cursor: not-allowed;
+}
+
+.wpcalibrate-vf-reset-btn {
+	background: transparent;
+	color: #64748b;
+	border: 1px solid #cbd5e1;
+	border-radius: var(--wpcalibrate-vf-border-radius);
+	padding: 9px 14px;
+	font-size: 0.9rem;
+	cursor: pointer;
+	transition: var(--wpcalibrate-vf-transition);
+}
+
+.wpcalibrate-vf-reset-btn:hover {
+	background-color: #f1f5f9;
+	color: #334155;
+}
+
+/* Spinner */
+.wpcalibrate-vf-spinner {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-inline-start: 8px;
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	border-radius: 50%;
+	border-top-color: #ffffff;
+	animation: wpcalibrate-vf-spin 0.7s linear infinite;
+}
+
+@keyframes wpcalibrate-vf-spin {
+	to { transform: rotate(360deg); }
+}
+
+/* Single Product Compatibility Badge */
+.wpcalibrate-vf-compat-box {
+	border-radius: var(--wpcalibrate-vf-border-radius);
+	padding: 14px 18px;
+	margin: 18px 0;
+	border-width: 1px;
+	border-style: solid;
+	box-sizing: border-box;
+}
+
+.wpcalibrate-vf-badge-fits {
+	background-color: var(--wpcalibrate-vf-success-bg);
+	border-color: var(--wpcalibrate-vf-success-border);
+	color: var(--wpcalibrate-vf-success-text);
+}
+
+.wpcalibrate-vf-badge-does-not-fit {
+	background-color: var(--wpcalibrate-vf-error-bg);
+	border-color: var(--wpcalibrate-vf-error-border);
+	color: var(--wpcalibrate-vf-error-text);
+}
+
+.wpcalibrate-vf-badge-unselected {
+	background-color: var(--wpcalibrate-vf-info-bg);
+	border-color: var(--wpcalibrate-vf-info-border);
+	color: var(--wpcalibrate-vf-info-text);
+}
+
+.wpcalibrate-vf-compat-header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 1.05rem;
+	margin-bottom: 6px;
+}
+
+.wpcalibrate-vf-compat-desc {
+	margin: 0 0 10px 0;
+	font-size: 0.95rem;
+	line-height: 1.4;
+}
+
+.wpcalibrate-vf-btn-compat-trigger {
+	background: transparent;
+	border: 1px solid currentColor;
+	color: inherit;
+	padding: 5px 12px;
+	border-radius: 4px;
+	font-size: 0.85rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: var(--wpcalibrate-vf-transition);
+}
+
+.wpcalibrate-vf-btn-compat-trigger:hover {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+/* Tab Table */
+.wpcalibrate-vf-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 15px;
+}
+
+.wpcalibrate-vf-table th,
+.wpcalibrate-vf-table td {
+	padding: 10px 12px;
+	text-align: start;
+	border-bottom: 1px solid #e2e8f0;
+	font-size: 0.92rem;
+}
+
+.wpcalibrate-vf-table th {
+	background-color: #f8fafc;
+	font-weight: 600;
+	color: #334155;
+}
+
+/* Garage Modal & Drawer */
+.wpcalibrate-vf-garage-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.wpcalibrate-vf-garage-backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.45);
+	backdrop-filter: blur(2px);
+}
+
+.wpcalibrate-vf-garage-content {
+	position: relative;
+	width: 100%;
+	max-width: 440px;
+	height: 100%;
+	background: #ffffff;
+	box-shadow: -4px 0 16px rgba(0, 0, 0, 0.15);
+	display: flex;
+	flex-direction: column;
+	z-index: 10;
+	overflow-y: auto;
+}
+
+.wpcalibrate-vf-garage-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 22px;
+	border-bottom: 1px solid #e2e8f0;
+}
+
+.wpcalibrate-vf-garage-title {
+	margin: 0;
+	font-size: 1.25rem;
+}
+
+.wpcalibrate-vf-garage-close {
+	background: none;
+	border: none;
+	font-size: 1.6rem;
+	cursor: pointer;
+	color: #64748b;
+	line-height: 1;
+}
+
+.wpcalibrate-vf-garage-body {
+	padding: 20px 22px;
+	flex: 1;
+}
+
+.wpcalibrate-vf-garage-items {
+	list-style: none;
+	padding: 0;
+	margin: 15px 0 25px;
+}
+
+.wpcalibrate-vf-garage-item {
+	padding: 12px;
+	border: 1px solid #e2e8f0;
+	border-radius: var(--wpcalibrate-vf-border-radius);
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: var(--wpcalibrate-vf-transition);
+}
+
+.wpcalibrate-vf-garage-item.is-active {
+	border-color: var(--wpcalibrate-vf-primary);
+	background-color: #f0f9ff;
+}
+
+.wpcalibrate-vf-badge-active {
+	background-color: var(--wpcalibrate-vf-primary);
+	color: #fff;
+	font-size: 0.72rem;
+	padding: 2px 6px;
+	border-radius: 10px;
+	margin-inline-start: 6px;
+}
+
+.wpcalibrate-vf-garage-footer {
+	padding: 15px 22px;
+	border-top: 1px solid #e2e8f0;
+	text-align: center;
+}
+
+.wpcalibrate-vf-btn-clear-garage {
+	background: none;
+	border: none;
+	color: #dc3232;
+	cursor: pointer;
+	font-size: 0.9rem;
+	text-decoration: underline;
+}
